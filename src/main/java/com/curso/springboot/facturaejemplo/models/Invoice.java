@@ -40,12 +40,12 @@ public class Invoice {
 	}
 	
 	public int getTotalInvoice() {
-		/*int total = 0;
+		int total = 0;
 		for (Item item :items) {
-			total += item.getImporte()
-		}*/
+			total += item.getImporte();
+		}
 		
-		int total = items.stream().map(i -> i.getImporte()).reduce(0, (sum, importe) -> sum + importe);
+		/*int total = items.stream().map(i -> i.getImporte()).reduce(0, (sum, importe) -> sum + importe);*/
 		return total;
 	}
 }

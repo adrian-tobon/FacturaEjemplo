@@ -15,7 +15,7 @@ public class Invoice {
 	
 	@Value("${invoice.description}")
 	private String description;
-	
+		
 	@Autowired
 	@Qualifier("itemsOffice")
 	private List<Item> items;
@@ -40,6 +40,10 @@ public class Invoice {
 	}
 	
 	public int getTotalInvoice() {
+		/*int total = 0;
+		for (Item item :items) {
+			total += item.getImporte()
+		}*/
 		
 		int total = items.stream().map(i -> i.getImporte()).reduce(0, (sum, importe) -> sum + importe);
 		return total;

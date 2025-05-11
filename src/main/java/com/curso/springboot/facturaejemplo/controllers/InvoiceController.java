@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.curso.springboot.facturaejemplo.models.Client;
+//import com.curso.springboot.facturaejemplo.models.Client;
 import com.curso.springboot.facturaejemplo.models.Invoice;
 
 @RestController
